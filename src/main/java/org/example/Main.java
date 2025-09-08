@@ -14,8 +14,9 @@ public class Main {
       //db.insertrow(conn,"employee","JS","Africa");
         //db.read_data(conn,"employee") ;
         //db.update(conn,"employee","Arasan","America");
-        //db.delete(conn,"employee","3");
+        db.delete_by_id(conn,"employee","3");
         //db.search_by_name(conn,"employee","JS");
-        db.search_by_id(conn,"employee","2");
+        //db.search_by_id(conn,"employee","2");
+        //db.delete_by_name(conn,"employee","JS");
     }
 }

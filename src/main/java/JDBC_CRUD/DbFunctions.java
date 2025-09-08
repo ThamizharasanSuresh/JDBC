@@ -74,10 +74,21 @@ public class DbFunctions {
             System.out.println(e);
         }
     }
-    public void delete(Connection conn,String table_name,String id){
+    public void delete_by_id(Connection conn,String table_name,String id){
         Statement statement;
         try{
             String query=String.format("DELETE from %s WHERE empid = '%s'",table_name,id);
+            statement=conn.createStatement();
+            statement.execute(query);
+            System.out.println("Deleted one row");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+    public void delete_by_name(Connection conn,String table_name,String name){
+        Statement statement;
+        try{
+            String query=String.format("DELETE from %s WHERE name = '%s'",table_name,name);
             statement=conn.createStatement();
             statement.execute(query);
             System.out.println("Deleted one row");
