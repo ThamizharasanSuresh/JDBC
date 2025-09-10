@@ -44,5 +44,4 @@ public class LoginValidiation {
             System.out.println(e);
         }
     }
-
 }
