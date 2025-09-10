@@ -2,7 +2,7 @@ package Connections;
 
 public class Connectiondata {
     public String getUrl() {
-        String url="jdbc:postgresql://localhost:5432/tutdb";
+        String url="jdbc:postgresql://localhost:5432/schooldb";
         return url;
     }
 
